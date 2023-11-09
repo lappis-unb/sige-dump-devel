@@ -5,13 +5,13 @@
 Clone this repository or:
 
 ```bash
-wget -O dump_db.gz https://gitlab.com/lappis-unb/projects/SMI/sige-dump-devel/-/raw/master/bkp-db-master-21-09-23.json.tar.gz?inline=false
+wget -O dump_db_part_aa.gz "https://gitlab.com/lappis-unb/projects/SMI/sige-dump-devel/-/raw/master/bkp-db-master-21-09-23.json.tar.gz_part_{aa,ab}?inline=false"
 ```
 
 ### Decompressing Dump File
 
 ```bash
-tar -xzvf bkp-db-master-21-09-23.json.tar.gz
+cat bkp-db-master-21-09-23.json.tar.gz_part_a* | tar -xzvf -
 ```
 
 ### Loading Dump File
@@ -28,13 +28,13 @@ This process can take quite a while.
 Clone this repository or:
 
 ```bash
-wget -O dump_db.gz https://gitlab.com/lappis-unb/projects/SMI/sige-dump-devel/-/raw/master/bkp-db-slave-21-09-23.json.tar.gz?inline=false
+wget -O dump_db_part_aa.gz "https://gitlab.com/lappis-unb/projects/SMI/sige-dump-devel/-/raw/master/bkp-db-slave-21-09-23.json.tar.gz_part_{aa,ab}?inline=false"
 ```
 
 ### Decompressing Dump File
 
 ```bash
-tar -xzvf bkp-db-slave-21-09-23.json.tar.gz
+cat bkp-db-slave-21-09-23.json.tar.gz_part_a* | tar -xzvf -
 ```
 
 ### Loading Dump File
